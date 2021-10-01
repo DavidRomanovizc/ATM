@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sha256.h
+string
+-
+cstdint
+-
+
+D:/Code/ATM_git/main.cpp
+main.h
+D:/Code/ATM_git/main.h
+sha256.h
+D:/Code/ATM_git/sha256.h
+iostream
+-
+
+D:/Code/ATM_git/main.h
+
+D:/Code/ATM_git/src/sha256.cpp
+sha256.h
+D:/Code/ATM_git/src/sha256.h
+
