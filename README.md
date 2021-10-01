@@ -1,2 +1,2 @@
 # ATM
-A C++ ATM simulator🤑
+A C++ ATM simulator
