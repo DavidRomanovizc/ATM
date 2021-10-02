@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Account.obj: src/Account.cpp.obj
+.PHONY : src/Account.obj
+
+# target to build an object file
+src/Account.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.obj
+.PHONY : src/Account.cpp.obj
+
+src/Account.i: src/Account.cpp.i
+.PHONY : src/Account.i
+
+# target to preprocess a source file
+src/Account.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.i
+.PHONY : src/Account.cpp.i
+
+src/Account.s: src/Account.cpp.s
+.PHONY : src/Account.s
+
+# target to generate assembly for a file
+src/Account.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.s
+.PHONY : src/Account.cpp.s
+
 src/sha256.obj: src/sha256.cpp.obj
 .PHONY : src/sha256.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Account.obj
+	@echo ... src/Account.i
+	@echo ... src/Account.s
 	@echo ... src/sha256.obj
 	@echo ... src/sha256.i
 	@echo ... src/sha256.s
