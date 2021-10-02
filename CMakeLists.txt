@@ -16,4 +16,6 @@ add_executable(ATM_git
         src/sha256.cpp
         include/Account.h
         src/account.cpp
+        src/Menu.cpp
+        include/Menu.h
         )

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Code/ATM_git/main.cpp" "D:/Code/ATM_git/cmake-build-debug/CMakeFiles/ATM_git.dir/main.cpp.obj"
   "D:/Code/ATM_git/src/Account.cpp" "D:/Code/ATM_git/cmake-build-debug/CMakeFiles/ATM_git.dir/src/Account.cpp.obj"
+  "D:/Code/ATM_git/src/Menu.cpp" "D:/Code/ATM_git/cmake-build-debug/CMakeFiles/ATM_git.dir/src/Menu.cpp.obj"
   "D:/Code/ATM_git/src/sha256.cpp" "D:/Code/ATM_git/cmake-build-debug/CMakeFiles/ATM_git.dir/src/sha256.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
