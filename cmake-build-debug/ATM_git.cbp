@@ -96,6 +96,9 @@
 		<Unit filename="D:/Code/ATM_git/include/Account.h">
 			<Option target="ATM_git"/>
 		</Unit>
+		<Unit filename="D:/Code/ATM_git/include/Menu.h">
+			<Option target="ATM_git"/>
+		</Unit>
 		<Unit filename="D:/Code/ATM_git/include/sha256.h">
 			<Option target="ATM_git"/>
 		</Unit>
@@ -106,6 +109,9 @@
 			<Option target="ATM_git"/>
 		</Unit>
 		<Unit filename="D:/Code/ATM_git/src/Account.cpp">
+			<Option target="ATM_git"/>
+		</Unit>
+		<Unit filename="D:/Code/ATM_git/src/Menu.cpp">
 			<Option target="ATM_git"/>
 		</Unit>
 		<Unit filename="D:/Code/ATM_git/src/sha256.cpp">
