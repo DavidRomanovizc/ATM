@@ -176,6 +176,30 @@ src/Account.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.s
 .PHONY : src/Account.cpp.s
 
+src/Bank.obj: src/Bank.cpp.obj
+.PHONY : src/Bank.obj
+
+# target to build an object file
+src/Bank.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.obj
+.PHONY : src/Bank.cpp.obj
+
+src/Bank.i: src/Bank.cpp.i
+.PHONY : src/Bank.i
+
+# target to preprocess a source file
+src/Bank.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.i
+.PHONY : src/Bank.cpp.i
+
+src/Bank.s: src/Bank.cpp.s
+.PHONY : src/Bank.s
+
+# target to generate assembly for a file
+src/Bank.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.s
+.PHONY : src/Bank.cpp.s
+
 src/Menu.obj: src/Menu.cpp.obj
 .PHONY : src/Menu.obj
 
@@ -239,6 +263,9 @@ help:
 	@echo ... src/Account.obj
 	@echo ... src/Account.i
 	@echo ... src/Account.s
+	@echo ... src/Bank.obj
+	@echo ... src/Bank.i
+	@echo ... src/Bank.s
 	@echo ... src/Menu.obj
 	@echo ... src/Menu.i
 	@echo ... src/Menu.s
