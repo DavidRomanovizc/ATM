@@ -26,24 +26,24 @@ User::User(int type, std::string username, int card_number, int pin_code, int ba
 
 }
 
-int User::type() {
-    return 0;
+int User::type() const {
+    return m_type;
 }
 
-int User::username() {
-    return 0;
+std::basic_string<char> User::username() {
+    return m_username;
 }
 
-int User::card_number() {
-    return 0;
+int User::card_number() const {
+    return m_card_number;
 }
 
-int User::pin_code() {
-    return 0;
+int User::pin_code() const {
+    return m_pin_code;
 }
 
-int User::balance() {
-    return 0;
+int User::balance() const {
+    return m_balance;
 }
 
 
