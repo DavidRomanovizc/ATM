@@ -7,4 +7,5 @@
 
 int main() {
     SHA256 sha256;
+
 }
