@@ -19,15 +19,15 @@ private:
 public:
     User(int type, std::string username, int card_number, int pin_code, int balance);
 
-    void type() const;
+    static int type() ;
 
-    void username() const;
+    static int username() ;
 
-    void card_number() const;
+    static int card_number() ;
 
-    void pin_code() const;
+    static int pin_code() ;
 
-    void balance() const;
+    static int balance() ;
 
 };
 
