@@ -18,4 +18,6 @@ add_executable(ATM_git
         src/account.cpp
         src/Menu.cpp
         include/Menu.h
+        include/Bank.h
+        src/Bank.cpp
         )
