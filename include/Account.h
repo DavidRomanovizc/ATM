@@ -7,28 +7,33 @@
 
 #include <iostream>
 #include <string>
+#include "Bank.h"
 
 
-class User {
-private:
-    std::string m_username;
-    int m_card_number, m_pin_code, m_type;
-    double m_balance;
-
-
+class User : public Bank {
 public:
-    User(int type, std::string username, int card_number, int pin_code, int balance);
+    User(std::string card, double money, std::string password)
+            : Bank(std::move(card), money, std::move(password)) {}
 
-    int type() const;
+    User(); // User function interface
 
-    std::basic_string<char> username();
+    void show(); // User function interface
 
-    int card_number() const;
+    void show_lock(); // Lock Card Tip
 
-    int pin_code() const;
+    void show_change_success(); // Multiple change password prompt
 
-    int balance() const;
+    void show_reEnter(); // Re-enter prompt
 
+    void show_reOperate(); // Re-operate prompt
+
+    void show_change_error(); // Password error prompt
+
+    void show_amount_error(); // amount error prompt
+
+    void show_beyond_amount(); // Excess extraction prompt
+
+    void show_noEnough_amount(); // Balance is insufficient
 };
 
 #endif //ATM_GIT_ACCOUNT_H

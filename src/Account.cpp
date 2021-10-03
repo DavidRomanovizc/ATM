@@ -4,46 +4,45 @@
 
 #include <Account.h>
 #include <string>
-#include <utility>
 
-void menu();
-
-void account(int option);
-
-int AccountDetails[] = {
-        1234,        // pin
-        100,        // checking account balance
-        600,        // savings account balance
-};
-
-
-User::User(int type, std::string username, int card_number, int pin_code, int balance)
-        : m_type(type),
-          m_username(std::move(username)),
-          m_card_number(card_number),
-          m_pin_code(pin_code),
-          m_balance(balance) {
+User::User() {
 
 }
 
-int User::type() const {
-    return m_type;
+void User::show() {
+
 }
 
-std::basic_string<char> User::username() {
-    return m_username;
+void User::show_lock() {
+
 }
 
-int User::card_number() const {
-    return m_card_number;
+void User::show_change_success() {
+
 }
 
-int User::pin_code() const {
-    return m_pin_code;
+void User::show_reEnter() {
+
 }
 
-int User::balance() const {
-    return m_balance;
+void User::show_reOperate() {
+
+}
+
+void User::show_change_error() {
+
+}
+
+void User::show_amount_error() {
+
+}
+
+void User::show_beyond_amount() {
+
+}
+
+void User::show_noEnough_amount() {
+
 }
 
 
