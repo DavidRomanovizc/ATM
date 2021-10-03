@@ -8,73 +8,26 @@
 #include <iostream>
 #include <string>
 
-int AccountDetails[] = {
-        1234,        // pin
-        100,        // checking account balance
-        600,        // savings account balance
-};
 
 class User {
 private:
-    std::string username;
-    int card_number, pin_code, type;
-    double balance;
+    std::string m_username;
+    int m_card_number, m_pin_code, m_type;
+    double m_balance;
 
 
 public:
-    User(int type, const std::string &username, int card_number, int pin_code, int balance) {
-        this->type = type;
-        this->username = username;
-        this->card_number = card_number;
-        this->pin_code = pin_code;
-        this->balance = balance;
-    }
+    User(int type, std::string username, int card_number, int pin_code, int balance);
 
+    void type() const;
 
-    int GetDeposit() {
-        int depositAmount;
-        std::cout << "Please enter an amount to deposit: " << "\n";
-        std::cin >> depositAmount;
+    void username() const;
 
-        int AccountBalance = this->balance += depositAmount;
+    void card_number() const;
 
-        AccountDetails[this->type] = AccountBalance;
-        std::cout << "\t$" << depositAmount << " was deposited into you account";
-        getBalance();
+    void pin_code() const;
 
-        return 0;
-    }
-
-    int getWithdraw() {
-        int withdraw_amount;
-
-        std::cout << "Please enter amount to withdrawn:\n ";
-        std::cin >> withdraw_amount;
-
-        // Get account type
-        if (withdraw_amount <= this->balance) {
-            int AccountBalance = this->balance -= withdraw_amount;
-            std::cout << "Dispensing... ";
-            std::cout << "$" << withdraw_amount << "\n";
-
-            // update the account balance
-            AccountDetails[this->type] = AccountBalance;
-            getBalance();
-        } else {
-            std::cout << "Insufficient funds" << "\n";
-        }
-        return 0;
-    }
-
-    // TODO: finish the implementation
-    int getTransfer() {
-        return 0;
-    }
-
-    // TODO: finish the implementation
-    int getBalance() {
-        return 0;
-    }
+    void balance() const;
 
 };
 
