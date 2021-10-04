@@ -7,5 +7,5 @@
 
 int main() {
     SHA256 sha256;
-
+    std::cout << sha256("Hello,! World") << std::endl;
 }
