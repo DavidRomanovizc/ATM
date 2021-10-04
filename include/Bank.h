@@ -23,11 +23,11 @@ public:
 
     void set_password(const std::string &password); // Create a password function
 
-    void set_card(const std::string &card); // Create an account function
+    void set_card(std::string); // Create an account function
 
     void set_money(double money); // Initialization balance function
 
-    int check(); // check the account password function
+    int check(User &); // check the account password function
 
     void lock(); // Lock card function
 
@@ -39,7 +39,8 @@ public:
 
     int change_password(); // Change the password function
 
-    void exit_system(); // Exit the user's operating interface function
+    static void exit_system(); // Exit the user's operating interface function
+    virtual void show_lock();
 };
 
 int Bank::times = 0;
