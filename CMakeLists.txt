@@ -14,10 +14,6 @@ add_executable(ATM_git
         README.md
         include/sha256.h
         src/sha256.cpp
-        include/Account.h
-        src/account.cpp
-        src/Menu.cpp
-        include/Menu.h
-        include/Bank.h
-        src/Bank.cpp
+        src/AccountRecord.cpp
+        include/AccountRecord.h
         )

@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/Account.h
-iostream
--
-string
--
-utility
--
-Bank.h
-../include/Bank.h
-
-../include/Bank.h
-string
--
-Account.h
-../include/Account.h
-
 ../include/sha256.h
 string
 -
@@ -37,18 +21,4 @@ iostream
 -
 
 D:/Code/ATM_git/main.h
-
-D:/Code/ATM_git/src/Account.cpp
-Account.h
--
-string
--
-
-D:/Code/ATM_git/src/Bank.cpp
-Bank.h
--
-utility
--
-
-D:/Code/ATM_git/src/Menu.cpp
 

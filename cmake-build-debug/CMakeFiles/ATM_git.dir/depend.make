@@ -5,16 +5,6 @@ CMakeFiles/ATM_git.dir/main.cpp.obj: \
  ../include/sha256.h \
  ../main.cpp \
  ../main.h
-CMakeFiles/ATM_git.dir/src/Account.cpp.obj: \
- ../include/Account.h \
- ../include/Bank.h \
- ../src/Account.cpp
-CMakeFiles/ATM_git.dir/src/Bank.cpp.obj: \
- ../include/Account.h \
- ../include/Bank.h \
- ../src/Bank.cpp
-CMakeFiles/ATM_git.dir/src/Menu.cpp.obj: \
- ../src/Menu.cpp
 CMakeFiles/ATM_git.dir/src/sha256.cpp.obj: \
  ../include/sha256.h \
  ../src/sha256.cpp

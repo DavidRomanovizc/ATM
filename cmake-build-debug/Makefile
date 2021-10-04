@@ -152,77 +152,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Account.obj: src/Account.cpp.obj
-.PHONY : src/Account.obj
+src/AccountRecord.obj: src/AccountRecord.cpp.obj
+.PHONY : src/AccountRecord.obj
 
 # target to build an object file
-src/Account.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.obj
-.PHONY : src/Account.cpp.obj
+src/AccountRecord.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.obj
+.PHONY : src/AccountRecord.cpp.obj
 
-src/Account.i: src/Account.cpp.i
-.PHONY : src/Account.i
-
-# target to preprocess a source file
-src/Account.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.i
-.PHONY : src/Account.cpp.i
-
-src/Account.s: src/Account.cpp.s
-.PHONY : src/Account.s
-
-# target to generate assembly for a file
-src/Account.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Account.cpp.s
-.PHONY : src/Account.cpp.s
-
-src/Bank.obj: src/Bank.cpp.obj
-.PHONY : src/Bank.obj
-
-# target to build an object file
-src/Bank.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.obj
-.PHONY : src/Bank.cpp.obj
-
-src/Bank.i: src/Bank.cpp.i
-.PHONY : src/Bank.i
+src/AccountRecord.i: src/AccountRecord.cpp.i
+.PHONY : src/AccountRecord.i
 
 # target to preprocess a source file
-src/Bank.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.i
-.PHONY : src/Bank.cpp.i
+src/AccountRecord.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.i
+.PHONY : src/AccountRecord.cpp.i
 
-src/Bank.s: src/Bank.cpp.s
-.PHONY : src/Bank.s
-
-# target to generate assembly for a file
-src/Bank.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Bank.cpp.s
-.PHONY : src/Bank.cpp.s
-
-src/Menu.obj: src/Menu.cpp.obj
-.PHONY : src/Menu.obj
-
-# target to build an object file
-src/Menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Menu.cpp.obj
-.PHONY : src/Menu.cpp.obj
-
-src/Menu.i: src/Menu.cpp.i
-.PHONY : src/Menu.i
-
-# target to preprocess a source file
-src/Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Menu.cpp.i
-.PHONY : src/Menu.cpp.i
-
-src/Menu.s: src/Menu.cpp.s
-.PHONY : src/Menu.s
+src/AccountRecord.s: src/AccountRecord.cpp.s
+.PHONY : src/AccountRecord.s
 
 # target to generate assembly for a file
-src/Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/Menu.cpp.s
-.PHONY : src/Menu.cpp.s
+src/AccountRecord.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.s
+.PHONY : src/AccountRecord.cpp.s
 
 src/sha256.obj: src/sha256.cpp.obj
 .PHONY : src/sha256.obj
@@ -260,15 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/Account.obj
-	@echo ... src/Account.i
-	@echo ... src/Account.s
-	@echo ... src/Bank.obj
-	@echo ... src/Bank.i
-	@echo ... src/Bank.s
-	@echo ... src/Menu.obj
-	@echo ... src/Menu.i
-	@echo ... src/Menu.s
+	@echo ... src/AccountRecord.obj
+	@echo ... src/AccountRecord.i
+	@echo ... src/AccountRecord.s
 	@echo ... src/sha256.obj
 	@echo ... src/sha256.i
 	@echo ... src/sha256.s
