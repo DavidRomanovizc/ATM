@@ -1,63 +1,78 @@
 //
-// Created by Romanov on 04.10.2021.
+// Created by Romanov on 01.10.2021.
 //
-
-#include <ctime>
+// ATM SYSTEM
+// OBJECT-ORIENTED PROGRAMMING USING C++
+//
+//
 #include <AccountRecord.h>
-#include <ctime>
 #include <utility>
+#include <iostream>
 
-Account::Account(std::time_t Settlement_account, std::vector<int> Income, int Income_cnt)
-        : m_Settlement_account(Settlement_account),
-          m_Income(std::move(Income)),
-          m_Income_cnt(Income_cnt) {
-    m_Settlement_account = std::time(nullptr);
-    m_Income.clear();
-    m_Income_cnt = 0;
-}
-
-void Account::Writedocument(std::ofstream &) {
+Account::Account(int number, std::string name, std::string fullname, double balance)
+        : m_number(number),
+          m_fullname(std::move(fullname)),
+          m_name(std::move(name)),
+          m_balance(balance) {
 
 }
 
-Account &Account::Read(std::ifstream &) {
+Account::Account()
+        : m_number(0),
+          m_fullname("Unknown"),
+          m_balance(0) {}
 
+int Account::getAccountNumber() {
+    return m_number;
 }
 
-std::time_t Account::GetFreeTime() {
-    return m_Settlement_account;
+void Account::setAccountNumber(int number) {
+    m_number = number;
 }
 
-std::vector<int> Account::GetIncome() {
-    return m_Income;
+std::string Account::getName() {
+    return m_fullname;
 }
 
-void Account::UpdateFreeTime(std::time_t) {
-
+void Account::setName(std::string fullname) {
+    m_fullname = std::move(fullname);
 }
 
-void Account::UpdateIncome(const std::vector<int> &) {
-
+std::basic_string<char> Account::naming() {
+    return m_name;
 }
 
-void Account::Free_Account() {
 
+void Account::hashName(const std::string &name) {
+    m_name = name;
 }
 
-bool Account::Is_Free() {
-    std::time_t freeze;
-    time(&freeze);
-    freeze += 60 * 60 * 24;
-    m_Settlement_account = freeze;
+
+double Account::getBalance() {
+    return m_balance;
 }
 
-void Account::Add_Income(int temp) {
-    m_Income.push_back(temp);
-    m_Income_cnt = m_Income.size();
+void Account::setBalance(double balance) {
+    m_balance = balance;
 }
 
-void Account::Display_Income() {
-
+void Account::getData() {
+    std::cout << "ENTER ACCOUNT NUMBER: ";
+    std::cin >> m_number;
+    std::cout << "ENTER ACCOUNT NAME: ";
+    std::cin >> m_name;
+    std::cout << "ENTER BALANCE: ";
+    std::cin >> m_balance;
 }
+
+void Account::displayData() {
+    std::cout << "Account number :" << m_number << std::endl;
+    std::cout << "INITIAL BALANCE :" << m_balance << std::endl;
+}
+
+void Account::showBalance() {
+    std::cout << "CURRENT BALANCE: " << m_balance << std::endl << std::endl;
+}
+
 
 

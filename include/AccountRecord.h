@@ -1,43 +1,53 @@
 //
-// Created by Romanov on 04.10.2021.
+// Created by Romanov on 01.10.2021.
+//
+// ATM SYSTEM
+// OBJECT-ORIENTED PROGRAMMING USING C++
+//
 //
 
 #ifndef ATM_GIT_ACCOUNTRECORD_H
 #define ATM_GIT_ACCOUNTRECORD_H
 
-#include <ctime>
-#include <vector>
-#include <fstream>
+#include <string>
+#include "sha256.h"
 
 class Account {
 private:
-    std::time_t m_Settlement_account;
-    std::vector<int> m_Income;
-    int m_Income_cnt; // Number of income and expenditure records
+    SHA256 sha256;
+    int m_number;
+    std::string m_fullname;
+    std::string m_name = sha256(m_fullname);
+    double m_balance;
+
 public:
-    friend class AccountItem;
+    Account();
 
-    Account(std::time_t Settlement_account, std::vector<int> Income, int Income_cnt);
+    Account(int number, std::string name, std::string fullname, double balance);
 
-    void Writedocument(std::ofstream &);
+    int getAccountNumber();
 
-    Account &Read(std::ifstream &);
+    void setAccountNumber(int number);
 
-    std::time_t GetFreeTime();
+    std::string getName();
 
-    std::vector<int> GetIncome();
+    void setName(std::string fullname);
 
-    void UpdateFreeTime(std::time_t);
+    std::basic_string<char> naming();
 
-    void UpdateIncome(const std::vector<int> &);
+    void hashName(const std::string& name);
 
-    void Free_Account();
+    double getBalance();
 
-    bool Is_Free();
+    void setBalance(double balance);
 
-    void Add_Income(int);
+    void getData();
 
-    void Display_Income();
+    void displayData();
+
+    void showBalance();
+
 };
+
 
 #endif //ATM_GIT_ACCOUNTRECORD_H
