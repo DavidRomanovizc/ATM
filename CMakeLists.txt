@@ -16,4 +16,6 @@ add_executable(ATM_git
         src/sha256.cpp
         src/AccountRecord.cpp
         include/AccountRecord.h
+        include/PinCode.h
+        src/PinCode.cpp
         )

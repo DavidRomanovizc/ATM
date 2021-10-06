@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "ATM_git.pdb"
   "CMakeFiles/ATM_git.dir/main.cpp.obj"
   "CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.obj"
+  "CMakeFiles/ATM_git.dir/src/PinCode.cpp.obj"
   "CMakeFiles/ATM_git.dir/src/sha256.cpp.obj"
   "libATM_git.dll.a"
 )

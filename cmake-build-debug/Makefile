@@ -176,6 +176,30 @@ src/AccountRecord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.s
 .PHONY : src/AccountRecord.cpp.s
 
+src/PinCode.obj: src/PinCode.cpp.obj
+.PHONY : src/PinCode.obj
+
+# target to build an object file
+src/PinCode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/PinCode.cpp.obj
+.PHONY : src/PinCode.cpp.obj
+
+src/PinCode.i: src/PinCode.cpp.i
+.PHONY : src/PinCode.i
+
+# target to preprocess a source file
+src/PinCode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/PinCode.cpp.i
+.PHONY : src/PinCode.cpp.i
+
+src/PinCode.s: src/PinCode.cpp.s
+.PHONY : src/PinCode.s
+
+# target to generate assembly for a file
+src/PinCode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/PinCode.cpp.s
+.PHONY : src/PinCode.cpp.s
+
 src/sha256.obj: src/sha256.cpp.obj
 .PHONY : src/sha256.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... src/AccountRecord.obj
 	@echo ... src/AccountRecord.i
 	@echo ... src/AccountRecord.s
+	@echo ... src/PinCode.obj
+	@echo ... src/PinCode.i
+	@echo ... src/PinCode.s
 	@echo ... src/sha256.obj
 	@echo ... src/sha256.i
 	@echo ... src/sha256.s
