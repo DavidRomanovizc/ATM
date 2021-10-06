@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../include/sha256.h
-string
--
-cstdint
--
-
-D:/Code/ATM_git/main.cpp
-main.h
-D:/Code/ATM_git/main.h
-sha256.h
-D:/Code/ATM_git/sha256.h
+../include/PinCode.h
 iostream
 -
+fstream
+-
 
-D:/Code/ATM_git/main.h
+D:/Code/ATM_git/src/PinCode.cpp
+PinCode.h
+-
 
