@@ -99,6 +99,9 @@
 		<Unit filename="D:/Code/ATM_git/include/PinCode.h">
 			<Option target="ATM_git"/>
 		</Unit>
+		<Unit filename="D:/Code/ATM_git/include/States.h">
+			<Option target="ATM_git"/>
+		</Unit>
 		<Unit filename="D:/Code/ATM_git/include/sha256.h">
 			<Option target="ATM_git"/>
 		</Unit>
@@ -112,6 +115,9 @@
 			<Option target="ATM_git"/>
 		</Unit>
 		<Unit filename="D:/Code/ATM_git/src/PinCode.cpp">
+			<Option target="ATM_git"/>
+		</Unit>
+		<Unit filename="D:/Code/ATM_git/src/States.cpp">
 			<Option target="ATM_git"/>
 		</Unit>
 		<Unit filename="D:/Code/ATM_git/src/sha256.cpp">

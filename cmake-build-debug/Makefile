@@ -200,6 +200,30 @@ src/PinCode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/PinCode.cpp.s
 .PHONY : src/PinCode.cpp.s
 
+src/States.obj: src/States.cpp.obj
+.PHONY : src/States.obj
+
+# target to build an object file
+src/States.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/States.cpp.obj
+.PHONY : src/States.cpp.obj
+
+src/States.i: src/States.cpp.i
+.PHONY : src/States.i
+
+# target to preprocess a source file
+src/States.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/States.cpp.i
+.PHONY : src/States.cpp.i
+
+src/States.s: src/States.cpp.s
+.PHONY : src/States.s
+
+# target to generate assembly for a file
+src/States.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/States.cpp.s
+.PHONY : src/States.cpp.s
+
 src/sha256.obj: src/sha256.cpp.obj
 .PHONY : src/sha256.obj
 
@@ -242,6 +266,9 @@ help:
 	@echo ... src/PinCode.obj
 	@echo ... src/PinCode.i
 	@echo ... src/PinCode.s
+	@echo ... src/States.obj
+	@echo ... src/States.i
+	@echo ... src/States.s
 	@echo ... src/sha256.obj
 	@echo ... src/sha256.i
 	@echo ... src/sha256.s

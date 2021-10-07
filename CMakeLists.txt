@@ -18,4 +18,6 @@ add_executable(ATM_git
         include/AccountRecord.h
         include/PinCode.h
         src/PinCode.cpp
+        include/States.h
+        src/States.cpp
         )
