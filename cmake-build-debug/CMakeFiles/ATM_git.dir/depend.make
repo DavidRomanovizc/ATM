@@ -12,6 +12,9 @@ CMakeFiles/ATM_git.dir/src/AccountRecord.cpp.obj: \
 CMakeFiles/ATM_git.dir/src/PinCode.cpp.obj: \
  ../include/PinCode.h \
  ../src/PinCode.cpp
+CMakeFiles/ATM_git.dir/src/States.cpp.obj: \
+ ../include/States.h \
+ ../src/States.cpp
 CMakeFiles/ATM_git.dir/src/sha256.cpp.obj: \
  ../include/sha256.h \
  ../src/sha256.cpp
