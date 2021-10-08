@@ -4,7 +4,7 @@
 
 #ifndef ATM_GIT_MAIN_H
 #define ATM_GIT_MAIN_H
-
+#include <iostream>
 
 class main {
 
