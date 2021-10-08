@@ -1,6 +1,10 @@
 //
 // Created by Romanov on 07.10.2021.
 //
+// ATM SYSTEM
+// OBJECT-ORIENTED PROGRAMMING USING C++
+//
+//
 
 #include <States.h>
 
