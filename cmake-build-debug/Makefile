@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/AccountManage.obj: src/AccountManage.cpp.obj
+.PHONY : src/AccountManage.obj
+
+# target to build an object file
+src/AccountManage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountManage.cpp.obj
+.PHONY : src/AccountManage.cpp.obj
+
+src/AccountManage.i: src/AccountManage.cpp.i
+.PHONY : src/AccountManage.i
+
+# target to preprocess a source file
+src/AccountManage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountManage.cpp.i
+.PHONY : src/AccountManage.cpp.i
+
+src/AccountManage.s: src/AccountManage.cpp.s
+.PHONY : src/AccountManage.s
+
+# target to generate assembly for a file
+src/AccountManage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ATM_git.dir\build.make CMakeFiles/ATM_git.dir/src/AccountManage.cpp.s
+.PHONY : src/AccountManage.cpp.s
+
 src/AccountRecord.obj: src/AccountRecord.cpp.obj
 .PHONY : src/AccountRecord.obj
 
@@ -260,6 +284,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/AccountManage.obj
+	@echo ... src/AccountManage.i
+	@echo ... src/AccountManage.s
 	@echo ... src/AccountRecord.obj
 	@echo ... src/AccountRecord.i
 	@echo ... src/AccountRecord.s
