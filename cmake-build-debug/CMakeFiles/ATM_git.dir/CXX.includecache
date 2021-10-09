@@ -6,6 +6,34 @@
 
 #IncludeRegexTransform: 
 
+../include/AccountManage.h
+iostream
+-
+fstream
+-
+string
+-
+AccountRecord.h
+../include/AccountRecord.h
+States.h
+../include/States.h
+
+../include/AccountRecord.h
+string
+-
+sha256.h
+../include/sha256.h
+
+../include/PinCode.h
+iostream
+-
+fstream
+-
+
+../include/States.h
+iostream
+-
+
 ../include/sha256.h
 string
 -
@@ -15,12 +43,18 @@ cstdint
 D:/Code/ATM_git/main.cpp
 main.h
 D:/Code/ATM_git/main.h
-sha256.h
-D:/Code/ATM_git/sha256.h
-iostream
--
 
 D:/Code/ATM_git/main.h
 iostream
 -
+AccountManage.h
+D:/Code/ATM_git/AccountManage.h
+AccountRecord.h
+D:/Code/ATM_git/AccountRecord.h
+PinCode.h
+D:/Code/ATM_git/PinCode.h
+States.h
+D:/Code/ATM_git/States.h
+sha256.h
+D:/Code/ATM_git/sha256.h
 
